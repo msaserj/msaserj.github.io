@@ -4,16 +4,16 @@
     justify-content: center;
 }
 
-@keyframes scaling{
-    0%, 100%{
+@keyframes scaling {
+    0%, 100% {
         transform: scale(0.2);
         color: #00ff04;
     }
-    40%{
+    40% {
         transform: scale(1);
         color: #0015ff;
     }
-    50%{
+    50% {
         transform: scale(1);
         color: red;
     }
@@ -42,32 +42,50 @@
     animation: scaling 2.0s ease-in-out infinite;
 }
 
-.main div:nth-child(0){
-    animation-delay:0s;
+@media screen and (max-width: 960px) {
+    .main div {
+        margin: 15px;
+        width: 60px;
+        height: 60px;
+        font-size: 32px;
+    }
+
 }
-.main div:nth-child(1){
-    animation-delay:0.2s;
+
+.main div:nth-child(0) {
+    animation-delay: 0s;
 }
-.main div:nth-child(2){
-    animation-delay:0.4s;
+
+.main div:nth-child(1) {
+    animation-delay: 0.2s;
 }
-.main div:nth-child(3){
-    animation-delay:0.6s;
+
+.main div:nth-child(2) {
+    animation-delay: 0.4s;
 }
-.main div:nth-child(4){
-    animation-delay:0.8s;
+
+.main div:nth-child(3) {
+    animation-delay: 0.6s;
 }
-.main div:nth-child(5){
-    animation-delay:1.0s;
+
+.main div:nth-child(4) {
+    animation-delay: 0.8s;
 }
-.main div:nth-child(6){
-    animation-delay:1.2s;
+
+.main div:nth-child(5) {
+    animation-delay: 1.0s;
 }
-.main div:nth-child(7){
-    animation-delay:1.4s;
+
+.main div:nth-child(6) {
+    animation-delay: 1.2s;
 }
-.main div:nth-child(8){
-    animation-delay:1.6s;
+
+.main div:nth-child(7) {
+    animation-delay: 1.4s;
+}
+
+.main div:nth-child(8) {
+    animation-delay: 1.6s;
 }
 
 .crutch_block {
@@ -77,14 +95,16 @@
     align-items: center;
     width: 100%;
 }
+
 img {
     width: 20%;
     height: 20%;
     animation: crutch 1.0s infinite;
     animation-timing-function: linear
 }
+
 @keyframes crutch {
-    100%{
+    100% {
         transform: rotate(360deg)
     }
 }
